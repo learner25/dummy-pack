@@ -1,5 +1,5 @@
 # dummy-pack
-
+A mini drag and drop dummy app for fantasy league boilerplate using react.js(ES6) and react-draggable
 #installation
 1.Clone the repository or download the zip
 

@@ -69,8 +69,8 @@ class App extends React.Component {
      
     );
   }
-  addEvent(todoItem){
-    allItems.push(todoItem.newItem,);
+  addEvent(appItem){
+    allItems.push(appItem.newItem,);
     this.setState({ allItems });
   }
 }

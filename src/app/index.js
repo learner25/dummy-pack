@@ -13,7 +13,7 @@ var allItems = []
 
  
  
-class TodoList extends React.Component {
+class App extends React.Component {
   constructor(props){
     super(props);
     this.addEvent = this.addEvent.bind(this);
@@ -64,7 +64,7 @@ class TodoList extends React.Component {
      
       <div>
          {items} 
-        <p><NewTodoItem addEvent={this.addEvent} /></p>
+        <p><NewAppItem addEvent={this.addEvent} /></p>
       </div>
      
     );
@@ -75,13 +75,13 @@ class TodoList extends React.Component {
   }
 }
  
-class TodoItem extends React.Component {
+class AppItem extends React.Component {
   render(){
     return <div>{this.props.item}</div>;
   }
 }
  
-class NewTodoItem extends React.Component {
+class NewAppItem extends React.Component {
   constructor(props){
     super(props);
     this.onSubmit = this.onSubmit.bind(this);
@@ -107,4 +107,4 @@ class NewTodoItem extends React.Component {
   }
 }
   
-render(<TodoList items={allItems} />, document.getElementById('container'));
+render(<App items={allItems} />, document.getElementById('container'));

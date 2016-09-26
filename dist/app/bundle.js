@@ -76,13 +76,13 @@
 	
 	var allItems = [];
 	
-	var TodoList = function (_React$Component) {
-	  _inherits(TodoList, _React$Component);
+	var App = function (_React$Component) {
+	  _inherits(App, _React$Component);
 	
-	  function TodoList(props) {
-	    _classCallCheck(this, TodoList);
+	  function App(props) {
+	    _classCallCheck(this, App);
 	
-	    var _this = _possibleConstructorReturn(this, (TodoList.__proto__ || Object.getPrototypeOf(TodoList)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 	
 	    _this.eventLogger = function (e, data) {
 	      console.log('Event: ', event);
@@ -93,7 +93,7 @@
 	    return _this;
 	  }
 	
-	  _createClass(TodoList, [{
+	  _createClass(App, [{
 	    key: 'getInitialState',
 	    value: function getInitialState() {
 	      return { allItems: allItems };
@@ -150,19 +150,19 @@
 	    }
 	  }]);
 	
-	  return TodoList;
+	  return App;
 	}(_react2.default.Component);
 	
-	var TodoItem = function (_React$Component2) {
-	  _inherits(TodoItem, _React$Component2);
+	var AppItem = function (_React$Component2) {
+	  _inherits(AppItem, _React$Component2);
 	
-	  function TodoItem() {
-	    _classCallCheck(this, TodoItem);
+	  function AppItem() {
+	    _classCallCheck(this, AppItem);
 	
-	    return _possibleConstructorReturn(this, (TodoItem.__proto__ || Object.getPrototypeOf(TodoItem)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (AppItem.__proto__ || Object.getPrototypeOf(AppItem)).apply(this, arguments));
 	  }
 	
-	  _createClass(TodoItem, [{
+	  _createClass(AppItem, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -173,22 +173,22 @@
 	    }
 	  }]);
 	
-	  return TodoItem;
+	  return AppItem;
 	}(_react2.default.Component);
 	
-	var NewTodoItem = function (_React$Component3) {
-	  _inherits(NewTodoItem, _React$Component3);
+	var NewAppItem = function (_React$Component3) {
+	  _inherits(NewAppItem, _React$Component3);
 	
-	  function NewTodoItem(props) {
-	    _classCallCheck(this, NewTodoItem);
+	  function NewAppItem(props) {
+	    _classCallCheck(this, NewAppItem);
 	
-	    var _this4 = _possibleConstructorReturn(this, (NewTodoItem.__proto__ || Object.getPrototypeOf(NewTodoItem)).call(this, props));
+	    var _this4 = _possibleConstructorReturn(this, (NewAppItem.__proto__ || Object.getPrototypeOf(NewAppItem)).call(this, props));
 	
 	    _this4.onSubmit = _this4.onSubmit.bind(_this4);
 	    return _this4;
 	  }
 	
-	  _createClass(NewTodoItem, [{
+	  _createClass(NewAppItem, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -215,10 +215,10 @@
 	    }
 	  }]);
 	
-	  return NewTodoItem;
+	  return NewAppItem;
 	}(_react2.default.Component);
 	
-	(0, _reactDom.render)(_react2.default.createElement(TodoList, { items: allItems }), document.getElementById('container'));
+	(0, _reactDom.render)(_react2.default.createElement(App, { items: allItems }), document.getElementById('container'));
 
 /***/ },
 /* 1 */
